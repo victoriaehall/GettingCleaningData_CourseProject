@@ -1,7 +1,4 @@
----
-title: "Getting and Cleaning Data Course Project"
-output: html_document
----
+#Getting and Cleaning Data Course Project
 ##by <a href="https://github.com/victoriaehall">Victoria Hall</a>
 
 This ReadMe file describes the R script, data, and CodeBook created for the 
@@ -39,7 +36,7 @@ The run_analysis R script is separated into five (5) sections that transition fr
 the raw data as downloaded from the Human Activity Recognition website to the
 final tidy data set, saved as 'tidy.txt'.
 
-#Section 1
+#Section 1: lines 10-40
 Section objective: merge the training and the test sets to create one data set
 
 The code within this section:
@@ -50,7 +47,7 @@ as dataframes and three (3) test data files (X_test.txt, y_test.txt, subject_tes
 3. Combines all three train and all three test dataframes, in this order: subject, activity, train data. This generates two dataframes: train & test
 4. Combines the train and test dataframes into one (1) dataframe called 'data'
 
-#Section 2
+#Section 2: lines 42-59
 Section objective: extracts the mean and standard deviation for each measurement
 
 The code within this section:
@@ -64,7 +61,7 @@ mean and standard deviation column numbers
 3. Subset the 'data' dataframe using the column numbers generated in step 2. This
 new dataframe is called 'extract'
 
-#Section 3
+#Section 3: lines 61-66
 Section objective: add descriptive activity names to the data set
 
 The code in this section:
@@ -72,7 +69,7 @@ The code in this section:
 1. Adds value names to the activity column in the extract dataframe based on the 
 labels outlined in the original 'activity.txt' dataframe
 
-#Section 4
+#Section 4: lines 68-78
 Section objective: Add appropriate variable labels to the extract dataframe
 
 The code in this section:
@@ -84,7 +81,7 @@ of the variable names that align with the mean and standard deviation
 variables that we selected in Section 2, Step 2
 3. Add these variables names to the extract dataframe
 
-#Section 5
+#Section 5: lines 80-89
 Section objective: creates a new, independent tidy data set with 
 the average of each variable for each activity and each subject
 
@@ -97,7 +94,7 @@ is averaged by subject and by activity
 3. This summarized data is saved in a new dataframe called 'tidy'
 
 
-#Section 6
+#Section 6: lines 91-94
 Section objective: saves the tidy dataset as a text file
 
 The code in this section:
