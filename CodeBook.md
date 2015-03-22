@@ -1,7 +1,4 @@
----
-title: "CodeBook for Getting and Cleaning Data Course Project"
-output: html_document
----
+##CodeBook for Getting and Cleaning Data Course Project
 
 1. **subject**  'subject'
         Numeric value between 1 and 30
@@ -14,7 +11,7 @@ output: html_document
         5 'Standing'  
         6 'Laying'  
 
-3. to 81.  A description of the variables is outlined below, as originally described
+3. to 81.  Variables 3 to 81 in the tidy dataset are the average of each measurement by subject and activity. Descriptions of the variables are outlined below, as originally described
 in the <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">
 Human Activity Recognition Using Smartphones Data Set</a>
 
@@ -45,9 +42,8 @@ Human Activity Recognition Using Smartphones Data Set</a>
 >* fBodyGyroMag
 >* fBodyGyroJerkMag
 
->The set of variables that were estimated from these signals are: 
->* mean(): Mean value
->* std(): Standard deviation
->* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+>The set of variables that were estimated from these signals are:  
+>* mean(): Mean value  
+>* std(): Standard deviation  
+>* meanFreq(): Weighted average of the frequency components to obtain a mean frequency  
 
-Variables 3 to 81 in the tidy dataset are the average of each measurement by subject and activity.
